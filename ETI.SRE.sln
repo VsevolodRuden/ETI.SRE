@@ -1,0 +1,214 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{97603D43-E413-4867-9C5B-12A1873B007F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAssets", "WebAssets", "{E3149C5B-7C32-40F5-9CBF-41491079BBF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleUtilities", "ConsoleUtilities", "{560C730B-F461-459D-8DF7-3470EB58A682}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFilesZipped", "SolutionFilesZipped", "{0C8BDF3E-3F5D-4CDE-9D93-157B970E4BB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reports", "Reports", "{E325DF3F-9F3E-4E5F-96B0-CB1E275F1958}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerBI", "PowerBI", "{FE9C5C8F-4C37-4B47-AA2E-46AA41EACCBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSRS", "SSRS", "{657E0199-9D21-40EE-AB35-C7A47AAFD136}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assemblies", "Assemblies", "{664BE6C7-2A6D-46F3-A7C4-DB2E91579B51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFilesUnpacked", "SolutionFilesUnpacked", "{6AABD540-3735-4E78-9FFF-5AECAC1D6968}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{D7799DDE-EF32-48EE-A84B-5C25B8B581F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomControls", "CustomControls", "{92DCD01B-DB72-46A6-8B48-902095E8AB3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE", "..\..\ETI.SRE\ETI.SRE\ETI.SRE.csproj", "{B09964F5-9B42-4E4B-96FA-010ADB640E01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.CoreHandler", "..\..\ETI.SRE.CoreHandler\ETI.SRE.CoreHandler\ETI.SRE.CoreHandler.csproj", "{9F24526D-2356-4B73-8821-F05DF4A8FB7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.AssociateBundlePricelist", "..\..\ETI.SRE.Plugins\ETI.SRE.AssociateBundlePricelist\ETI.SRE.AssociateBundlePricelist.csproj", "{814DD343-D6FB-4C8E-ADA8-1AD5270CD2AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.BillingConfigurationSingleton", "..\..\ETI.SRE.Plugins\ETI.SRE.BillingConfigurationSingleton\ETI.SRE.BillingConfigurationSingleton.csproj", "{5E40BEFE-C451-4265-A9B5-986E72A86A99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.PromoProductsHandler", "..\..\ETI.SRE.PromoProductsHandler\ETI.SRE.PromoProductsHandler\ETI.SRE.PromoProductsHandler.csproj", "{2BDF8506-2597-4851-B093-862899F8BF17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.BundleAssociationValidation", "..\..\ETI.SRE.Plugins\ETI.SRE.BundleAssociationValidation\ETI.SRE.BundleAssociationValidation.csproj", "{52884B61-EDF8-4D9C-A178-F5A663883B7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.CreateRuleForEmptuBundleAssociation", "..\..\ETI.SRE.Plugins\ETI.SRE.CreateRuleForEmptuBundleAssociation\ETI.SRE.CreateRuleForEmptuBundleAssociation.csproj", "{82F12020-9A8E-4AE8-B543-4CCFF53FD5A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.DeleteRelatedAssociationsOnRuleDelete", "..\..\ETI.SRE.Plugins\ETI.SRE.DeleteRelatedAssociationsOnRuleDelete\ETI.SRE.DeleteRelatedAssociationsOnRuleDelete.csproj", "{27FC176B-3CF6-457C-AE63-7838E90B3EBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.ProductAssignmentValidation", "..\..\ETI.SRE.Plugins\ETI.SRE.ProductAssignmentValidation\ETI.SRE.ProductAssignmentValidation.csproj", "{4D649C51-0313-428C-A40E-7A4D9214E67B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.ProductsHistory", "..\..\ETI.SRE.Plugins\ETI.SRE.ProductsHistory\ETI.SRE.ProductsHistory.csproj", "{7F18200E-6059-40B2-BE3C-9CED4F78FE44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.SyncAccountBundleProductStatuses", "..\..\ETI.SRE.Plugins\ETI.SRE.SyncAccountBundleProductStatuses\ETI.SRE.SyncAccountBundleProductStatuses.csproj", "{6D9DE872-B1F6-4B79-BA6E-07C2052D7AC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.UpdateBundlePrice", "..\..\ETI.SRE.Plugins\ETI.SRE.UpdateBundlePrice\ETI.SRE.UpdateBundlePrice.csproj", "{1D098829-4449-408E-A45B-7BA15D7E5624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.ValidateBundle", "..\..\ETI.SRE.Plugins\ETI.SRE.ValidateBundle\ETI.SRE.ValidateBundle.csproj", "{C076D06B-A464-4BFF-AAF5-02FD2BB3851F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Settings", "Settings", "{7FAEA97F-D09B-41CD-B941-1747426D3787}"
+	ProjectSection(SolutionItems) = preProject
+		WebAssets\billingconf.html = WebAssets\billingconf.html
+		WebAssets\billingconf.js = WebAssets\billingconf.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{201C5EEE-F36B-4FFE-B3B9-55B4B2955BE7}"
+	ProjectSection(SolutionItems) = preProject
+		WebAssets\billpreview.html = WebAssets\billpreview.html
+		WebAssets\billpreviewpopup.html = WebAssets\billpreviewpopup.html
+		WebAssets\configuration_visibility.js = WebAssets\configuration_visibility.js
+		WebAssets\eti_Billing.js = WebAssets\eti_Billing.js
+		WebAssets\eti_Billing_NEW.html = WebAssets\eti_Billing_NEW.html
+		WebAssets\eti_Billing_NEW.js = WebAssets\eti_Billing_NEW.js
+		WebAssets\eti_BillingWellKnown.js = WebAssets\eti_BillingWellKnown.js
+		WebAssets\eti_history.html = WebAssets\eti_history.html
+		WebAssets\eti_history.js = WebAssets\eti_history.js
+		WebAssets\eti_payment_preview.js = WebAssets\eti_payment_preview.js
+		WebAssets\eti_payment_preview_popup.js = WebAssets\eti_payment_preview_popup.js
+		WebAssets\placeholder.html = WebAssets\placeholder.html
+		WebAssets\Products Tab.html = WebAssets\Products Tab.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{70DD0043-0196-4905-B104-7061C632C39C}"
+	ProjectSection(SolutionItems) = preProject
+		WebAssets\eti_bundle_products.html = WebAssets\eti_bundle_products.html
+		WebAssets\eti_bundle_products.js = WebAssets\eti_bundle_products.js
+		WebAssets\eti_bundle_products_NEW.html = WebAssets\eti_bundle_products_NEW.html
+		WebAssets\eti_bundle_products_NEW.js = WebAssets\eti_bundle_products_NEW.js
+		WebAssets\eti_bundle_products_TREE.html = WebAssets\eti_bundle_products_TREE.html
+		WebAssets\eti_bundle_products_TREE.js = WebAssets\eti_bundle_products_TREE.js
+		WebAssets\eti_pricelist_matrix.html = WebAssets\eti_pricelist_matrix.html
+		WebAssets\eti_pricelist_matrix.js = WebAssets\eti_pricelist_matrix.js
+		WebAssets\eti_product_pricelists.html = WebAssets\eti_product_pricelists.html
+		WebAssets\eti_product_pricelists.js = WebAssets\eti_product_pricelists.js
+		WebAssets\eti_SRE.Product.FilterProductSubtypes.js = WebAssets\eti_SRE.Product.FilterProductSubtypes.js
+		WebAssets\promoVisibility.js = WebAssets\promoVisibility.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product Caegory", "Product Caegory", "{1DC8EB3A-F41B-46FC-954A-A7C0032D2A59}"
+	ProjectSection(SolutionItems) = preProject
+		WebAssets\eti_category_rules.html = WebAssets\eti_category_rules.html
+		WebAssets\eti_category_rules.js = WebAssets\eti_category_rules.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tax Schedule", "Tax Schedule", "{8B295F71-74F4-4251-A5A7-6B80C6B1C97F}"
+	ProjectSection(SolutionItems) = preProject
+		WebAssets\eti_taxschedule_taxes.html = WebAssets\eti_taxschedule_taxes.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General", "General", "{64E6B7C4-A389-45EF-8456-3A1D77AFC983}"
+	ProjectSection(SolutionItems) = preProject
+		WebAssets\copy.png = WebAssets\copy.png
+		WebAssets\cross.png = WebAssets\cross.png
+		WebAssets\eti_kendo.all.min.js = WebAssets\eti_kendo.all.min.js
+		WebAssets\jquery.min.js = WebAssets\jquery.min.js
+		WebAssets\kendo.common.min.css = WebAssets\kendo.common.min.css
+		WebAssets\kendo.default-v2.min.css = WebAssets\kendo.default-v2.min.css
+		WebAssets\kendo.default.min.css = WebAssets\kendo.default.min.css
+		WebAssets\kendo.default.mobile.min.css = WebAssets\kendo.default.mobile.min.css
+		WebAssets\lodash.js = WebAssets\lodash.js
+		WebAssets\pricelevel_png.png = WebAssets\pricelevel_png.png
+		WebAssets\tick.png = WebAssets\tick.png
+		WebAssets\trashbin (2).png = WebAssets\trashbin (2).png
+		WebAssets\trashbin.png = WebAssets\trashbin.png
+		WebAssets\.png = WebAssets\.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B09964F5-9B42-4E4B-96FA-010ADB640E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09964F5-9B42-4E4B-96FA-010ADB640E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09964F5-9B42-4E4B-96FA-010ADB640E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09964F5-9B42-4E4B-96FA-010ADB640E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F24526D-2356-4B73-8821-F05DF4A8FB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F24526D-2356-4B73-8821-F05DF4A8FB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F24526D-2356-4B73-8821-F05DF4A8FB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F24526D-2356-4B73-8821-F05DF4A8FB7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{814DD343-D6FB-4C8E-ADA8-1AD5270CD2AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{814DD343-D6FB-4C8E-ADA8-1AD5270CD2AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{814DD343-D6FB-4C8E-ADA8-1AD5270CD2AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{814DD343-D6FB-4C8E-ADA8-1AD5270CD2AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E40BEFE-C451-4265-A9B5-986E72A86A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E40BEFE-C451-4265-A9B5-986E72A86A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E40BEFE-C451-4265-A9B5-986E72A86A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E40BEFE-C451-4265-A9B5-986E72A86A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BDF8506-2597-4851-B093-862899F8BF17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BDF8506-2597-4851-B093-862899F8BF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BDF8506-2597-4851-B093-862899F8BF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BDF8506-2597-4851-B093-862899F8BF17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52884B61-EDF8-4D9C-A178-F5A663883B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52884B61-EDF8-4D9C-A178-F5A663883B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52884B61-EDF8-4D9C-A178-F5A663883B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52884B61-EDF8-4D9C-A178-F5A663883B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F12020-9A8E-4AE8-B543-4CCFF53FD5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F12020-9A8E-4AE8-B543-4CCFF53FD5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F12020-9A8E-4AE8-B543-4CCFF53FD5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F12020-9A8E-4AE8-B543-4CCFF53FD5A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27FC176B-3CF6-457C-AE63-7838E90B3EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27FC176B-3CF6-457C-AE63-7838E90B3EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27FC176B-3CF6-457C-AE63-7838E90B3EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27FC176B-3CF6-457C-AE63-7838E90B3EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D649C51-0313-428C-A40E-7A4D9214E67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D649C51-0313-428C-A40E-7A4D9214E67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D649C51-0313-428C-A40E-7A4D9214E67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D649C51-0313-428C-A40E-7A4D9214E67B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F18200E-6059-40B2-BE3C-9CED4F78FE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F18200E-6059-40B2-BE3C-9CED4F78FE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F18200E-6059-40B2-BE3C-9CED4F78FE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F18200E-6059-40B2-BE3C-9CED4F78FE44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D9DE872-B1F6-4B79-BA6E-07C2052D7AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D9DE872-B1F6-4B79-BA6E-07C2052D7AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D9DE872-B1F6-4B79-BA6E-07C2052D7AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D9DE872-B1F6-4B79-BA6E-07C2052D7AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D098829-4449-408E-A45B-7BA15D7E5624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D098829-4449-408E-A45B-7BA15D7E5624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D098829-4449-408E-A45B-7BA15D7E5624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D098829-4449-408E-A45B-7BA15D7E5624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C076D06B-A464-4BFF-AAF5-02FD2BB3851F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C076D06B-A464-4BFF-AAF5-02FD2BB3851F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C076D06B-A464-4BFF-AAF5-02FD2BB3851F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C076D06B-A464-4BFF-AAF5-02FD2BB3851F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F} = {664BE6C7-2A6D-46F3-A7C4-DB2E91579B51}
+		{97603D43-E413-4867-9C5B-12A1873B007F} = {664BE6C7-2A6D-46F3-A7C4-DB2E91579B51}
+		{FE9C5C8F-4C37-4B47-AA2E-46AA41EACCBD} = {E325DF3F-9F3E-4E5F-96B0-CB1E275F1958}
+		{657E0199-9D21-40EE-AB35-C7A47AAFD136} = {E325DF3F-9F3E-4E5F-96B0-CB1E275F1958}
+		{B09964F5-9B42-4E4B-96FA-010ADB640E01} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{9F24526D-2356-4B73-8821-F05DF4A8FB7B} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{814DD343-D6FB-4C8E-ADA8-1AD5270CD2AD} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{5E40BEFE-C451-4265-A9B5-986E72A86A99} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{2BDF8506-2597-4851-B093-862899F8BF17} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{52884B61-EDF8-4D9C-A178-F5A663883B7F} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{82F12020-9A8E-4AE8-B543-4CCFF53FD5A5} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{27FC176B-3CF6-457C-AE63-7838E90B3EBB} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{4D649C51-0313-428C-A40E-7A4D9214E67B} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{7F18200E-6059-40B2-BE3C-9CED4F78FE44} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{6D9DE872-B1F6-4B79-BA6E-07C2052D7AC3} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{1D098829-4449-408E-A45B-7BA15D7E5624} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{C076D06B-A464-4BFF-AAF5-02FD2BB3851F} = {41A74C96-24EF-4D25-A2D2-F6C6C6ADDD4F}
+		{7FAEA97F-D09B-41CD-B941-1747426D3787} = {E3149C5B-7C32-40F5-9CBF-41491079BBF6}
+		{201C5EEE-F36B-4FFE-B3B9-55B4B2955BE7} = {E3149C5B-7C32-40F5-9CBF-41491079BBF6}
+		{70DD0043-0196-4905-B104-7061C632C39C} = {E3149C5B-7C32-40F5-9CBF-41491079BBF6}
+		{1DC8EB3A-F41B-46FC-954A-A7C0032D2A59} = {E3149C5B-7C32-40F5-9CBF-41491079BBF6}
+		{8B295F71-74F4-4251-A5A7-6B80C6B1C97F} = {E3149C5B-7C32-40F5-9CBF-41491079BBF6}
+		{64E6B7C4-A389-45EF-8456-3A1D77AFC983} = {E3149C5B-7C32-40F5-9CBF-41491079BBF6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3444AB8-A506-4335-8C3C-5F71A0FE1DA9}
+	EndGlobalSection
+EndGlobal

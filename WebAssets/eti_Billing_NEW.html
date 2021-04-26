@@ -1,0 +1,103 @@
+<html>
+   <head>
+      <title></title>
+      <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.406/styles/kendo.common-bootstrap.min.css">
+      <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.406/styles/kendo.bootstrap.min.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/chip.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/pager.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/shadow.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/status.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/styles.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/button.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/checkbox.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/combobox.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/core.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/datetimepicker.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/dialog.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/dropdownlist.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/form.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/grid.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/header.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/input-label.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/multiselect.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/numeric-text-box.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/paragraph.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/radio.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/styles.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/switch.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/tabs.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/textbox.css">
+      <script src="eti_lodash.js"></script>
+      <script src="ClientGlobalContext.js.aspx" type="text/javascript"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="eti_kendo.all.min.js"></script>
+      <script src="eti_Billing.js"></script>
+      <meta>
+      <meta>
+      <meta>
+   </head>
+   <body style="overflow-wrap: break-word; font-family: Segoe UI,Tahoma,Arial;">
+
+      <script type="text/x-kendo-template" id="template-active">
+         <div class="buttonsComtainer">
+            <a  id = "addLabel" class="k-pager-plus k-link k-button transparent k-text-button k-button-icon" title="Add Product"><span style="float:right" class="k-icon k-i-plus"></span>Add Product</a><a id = "editLabel" class="k-pager-edit k-link k-text-button k-button transparent k-button-icon" title="Edit"><span class="k-icon k-i-edit"></span>Edit</a>  <a id = "deleteLabel" class="k-pager-delete k-link k-button transparent k-text-button k-button-icon" title="Delete"><span class="k-icon k-i-delete"></span>Delete</a> <a id = "refreshLeftLabel" class="k-pager-refreshLeft k-link k-button transparent k-button-icon" title="Refresh"><span class="k-icon k-i-reload"></span></a>  
+         </div>
+     
+     </script>
+     <script type="text/x-kendo-template" id="template-pending">
+      <div class="buttonsComtainer">
+         <a  id = "addLabel" class="k-pager-plus-active k-link k-button transparent k-text-button k-button-icon" title="Add Product"><span style="float:right" class="k-icon k-i-plus"></span>Add Product</a><a  class="k-pager-left k-link k-button transparent k-text-button-wide k-button-icon" title="Discard Changes"><span style="float:right" class="k-icon k-i-arrow-left"></span>Discard Changes</a>         <a  class="k-pager-right k-link k-button transparent k-text-button-wide k-button-icon" title="Confirm Changes"><span style="float:right" class="k-icon k-i-arrow-right"></span>Confirm Changes</a>  <a  class="k-pager-reset k-link k-button transparent k-text-button-wide k-button-icon" title="Reset Price"><span style="float:right" ></span>Reset Price</a><a class="k-pager-refreshRight k-link k-button transparent k-button-icon" title="Refresh"><span class="k-icon k-i-reload"></span></a>   
+      </div>
+  
+  </script>
+  <div id="assignmentDialog" class = "" style = "display: none">
+   <div id="productAssignmentDialog"></div>
+   <div id="add-product" class="demo-section k-content">
+       <p class="title">Add Product</p>    
+   </div>
+   </div>
+   <div id="assignmentDialogBundle" class = ""  style = "display: none">
+      <div id="bundleAssignmentDialog"></div>
+      <div id="add-bundle" class="demo-section k-content">
+          <p class="title">Add Bundle</p>    
+      </div>
+      </div>
+   <div id="dialog"></div>
+
+      <table id="mainTable" class = "mainTable" width="100%" >
+         <tr class = "mainTable">
+            <td>
+      <div id="tabstrip">
+        <ul>
+          <li style = "margin-left: 15px !important" id="activeTab" class="k-state-active"><span id="activeTabLabel">Active Products</span></li>
+          <li style = "margin-left: 15px !important" id="pendingTab"><span id="pendingTabLabel">Pending and draft Products</span></li>
+        </ul>
+       
+        <div><div id="activeGrid" class="k-extended-tab-content"></div></div>
+        <div><div id="pendingGrid" class="k-extended-tab-content"></div></div>
+        </td>
+      </div>
+      </table>
+      <style>
+         .transparent{
+            width: fit-content !important;
+         }
+         .k-dialog-titlebar .k-dialog-actions {
+         top: 0px !important;
+         }
+         .k-grid-toolbar {
+         background: transparent !important;
+         }
+         .k-dialog-close
+         {
+            margin-left: 10;
+    margin-bottom: 10;
+    margin-top: 10;
+    margin-right: 10;
+         }
+
+        
+         
+      </style>
+   </body>
+</html>

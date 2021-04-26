@@ -1,0 +1,122 @@
+<html>
+   <head>
+      <title></title>
+      <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.406/styles/kendo.common-bootstrap.min.css">
+      <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.406/styles/kendo.bootstrap.min.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/chip.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/pager.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/shadow.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/status.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/styles.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/button.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/checkbox.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/combobox.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/core.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/datetimepicker.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/dialog.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/dropdownlist.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/form.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/grid.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/header.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/input-label.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/multiselect.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/numeric-text-box.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/paragraph.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/radio.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/styles.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/switch.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/tabs.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/textbox.css">
+      <script src="eti_lodash.js"></script>
+      <script src="ClientGlobalContext.js.aspx" type="text/javascript"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="eti_kendo.all.min.js"></script>
+      <script src="eti_payment_preview_popup.js"></script>
+      <meta>
+      <meta>
+      <meta>
+   </head>
+   <body style="overflow-wrap: break-word; font-family: Segoe UI,Tahoma,Arial;">
+    <div id="detailsDialogHeader" class = "" style = "display: none">
+        <div id="detailsDialog"></div>
+        <div id="show-details" class="demo-section k-content">
+            <p class="title">Charges</p>  
+        </div>
+    </div>
+      <div id="mainDiv">
+         <div id="dialog"></div>
+         <span class="topLabel"></span>
+         <table id="mainTable" class = "mainTable" width="100%">
+            <tbody>
+               <tr>
+                  <td class = "grid" id="productsRow"><div id="grid"></div></td>
+               </tr>
+               <tr>  
+                <td class = "valueLabel" id="relativePaymentValue"></td>
+               </tr>
+               <tr>  
+                <td class = "valueLabel" id="nextMonthPaymentValue"></td>
+               </tr>
+               
+            </tbody>
+         </table>
+      </div>
+      <style>
+         .k-button{
+        
+         padding: 0;
+border: none;
+background: none;
+         }
+         .eti-command-reset {
+         color: green;
+         float: left;
+         }
+         .k-header .k-link{
+         text-align: center;
+         }
+         .black-cap {
+         background-position: 0 0;
+         }
+         .grey-cap {
+         background-position: 0 -225px;
+         }
+         .k-grid {
+         font-size: 14px;
+         }
+         .orange-cap {
+         background-position: 0 -450px;
+         }
+         .k-multiselect {
+             vertical-align: top;
+         }
+         .tr
+         {
+            border-bottom:1px solid black;
+            vertical-align: top;
+         }
+         .topLabel
+         {
+            font-size: 1.4em;
+            font-weight: bold;
+            padding-top: 50px;
+            padding-left: 50px;
+         }
+         .mainTable
+         {
+            padding-top: 10px;
+            padding-right: 50px;
+            padding-left: 50px;
+            
+            
+ 
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+      </style>
+   </body>
+</html>

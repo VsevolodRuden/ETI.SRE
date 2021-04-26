@@ -1,0 +1,149 @@
+<html>
+   <head>
+      <title></title>
+      <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.406/styles/kendo.common-bootstrap.min.css">
+      <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.406/styles/kendo.bootstrap.min.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/chip.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/pager.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/shadow.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/status.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/core/styles.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/button.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/checkbox.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/combobox.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/core.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/datetimepicker.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/dialog.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/dropdownlist.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/form.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/grid.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/header.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/input-label.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/multiselect.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/numeric-text-box.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/paragraph.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/radio.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/styles.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/switch.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/tabs.css">
+      <link rel="stylesheet" href="eti_/common/kendo/styles/customizing-kendo-theme/textbox.css">
+      <script src="eti_lodash.js"></script>
+      <script src="ClientGlobalContext.js.aspx" type="text/javascript"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="eti_kendo.all.min.js"></script>
+      <script src="eti_billing_configuration.js"></script>
+      <meta>
+      <meta>
+      <meta>
+   </head>
+   <body style="overflow-wrap: break-word; font-family: Segoe UI,Tahoma,Arial;">
+      <div id="mainDiv">
+         <div id="dialog"></div>
+         <span class="topLabel">General</span>
+         <table id="mainTable" class = "mainTable" width="100%">
+            <tbody>
+               <tr>
+                  <td width = 20% class = "fieldLabel">Select Billing Type</td><td width = 5%></td><td width = 20%><div id="billingTypeDropDown"></div></td>
+               </tr>
+                <tr>
+                   
+                  <td class = "fieldLabel">Credit back for OTC</td><td><a  id="creditBackInfo" class="k-link k-button k-button-icon" ><span  class="k-icon k-i-information"></span></a></td><td><input id="creditBack"/></td>
+               </tr>
+               <tr>
+                  <td class = "fieldLabel">Prorate for partial period?</td><td><a id="prorateForPartialInfo"  class="k-link k-button k-button-icon" ><span   class="k-icon k-i-information"></span></a></td><td><input id="prorateForPartial"/></td>
+               </tr>
+               <tr>
+                  <td class = "fieldLabel">Monthly recurring charges for partial month?</td><td><a id="monthlyRecurringInfo"  class="k-link k-button k-button-icon" ><span  class="k-icon k-i-information"></span></a></td><td><input id="monthlyRecurring"/></td>
+               </tr>
+               <tr>  
+                  <td class = "fieldLabel">Weekly recurring charges for partial week?</td><td><a id="weeklyRecurringInfo"  class="k-link k-button k-button-icon" ><span  class="k-icon k-i-information"></span></a></td><td><input id="weeklyRecurring"/></td>
+               </tr>
+               <tr>
+                  <td class = "fieldLabel">Monthly usage charges for partial months?</td><td><a id="monthlyUsageInfo"  class="k-link k-button k-button-icon" ><span   class="k-icon k-i-information"></span></a></td><td><input id="monthlyUsage"/></td>
+               </tr>
+               <tr>
+                  <td class = "fieldLabel">Weekly usage charges for partial week?</td><td><a id="weeklyUsageInfo"  class="k-link k-button k-button-icon" ><span id="weeklyUsageInfo"  style="float:right" class="k-icon k-i-information"></span></a></td><td><input id="weeklyUsage"/></td>
+               </tr>
+               <tr>
+                  <td class = "fieldLabel">Prorating with actual number of days?</td><td><a id="proratingWithDaysInfo"  class="k-link k-button k-button-icon" ><span id="proratingWithDaysInfo"  style="float:right" class="k-icon k-i-information"></span></a></td><td><input id="proratingWithDays"/></td>
+               </tr>
+               <tr>
+                  <td class = "fieldLabel">Prorate periods greater than a month?</td><td><a id="proratePeriodsInfo"  class="k-link k-button k-button-icon" ><span id="proratePeriodsInfo"  style="float:right" class="k-icon k-i-information"></span></a></td><td><input id="proratePeriods"/></td>
+               </tr>
+               <tr>
+                  <td class = "fieldLabel">Prorate by Day?</td><td><a id="prorateByInfo"  class="k-link k-button k-button-icon" ><span id="prorateByInfo"  style="float:right" class="k-icon k-i-information"></span></a></td><td><input id="prorateBy"/></td>
+               </tr>
+               <tr>
+                  <td class = "fieldLabel">Bill Run Auto-Create?</td><td><a id="runAutoCreateInfo"  class="k-link k-button k-button-icon" ><span id="runAutoCreateInfo"  style="float:right" class="k-icon k-i-information"></span></a></td><td><input id="runAutoCreate"/></td>
+               </tr>
+               <tr>
+                  <td class = "fieldLabel">Automatically post billing documents?</td><td><a id="autoPostInfo"  class="k-link k-button k-button-icon" ><span id="autoPostInfo"  style="float:right" class="k-icon k-i-information"></span></a></td><td><input id="autoPost"/></td>
+               </tr>
+               <tr>
+                  <td class = "fieldLabel">Negative totals invoices include in Account Balance?</td><td><a id="negativeTotalsInfo"  class="k-link k-button k-button-icon" ><span id="negativeTotalsInfo"  style="float:right" class="k-icon k-i-information"></span></a></td><td><input id="negativeTotals"/></td>
+               </tr>
+               <tr>
+                  <td class = "fieldLabel">Determine individually usage records?</td><td><a id="determineUsageInfo"  class="k-link k-button k-button-icon" ><span id="determineUsageInfo"  style="float:right" class="k-icon k-i-information"></span></a></td><td><input id="determineUsage"/></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <style>
+         .k-button{
+         float: right;
+         padding: 0;
+border: none;
+background: none;
+         }
+         .eti-command-reset {
+         color: green;
+         float: left;
+         }
+         .k-header .k-link{
+         text-align: center;
+         }
+         .black-cap {
+         background-position: 0 0;
+         }
+         .grey-cap {
+         background-position: 0 -225px;
+         }
+         .k-grid {
+         font-size: 14px;
+         }
+         .orange-cap {
+         background-position: 0 -450px;
+         }
+         .k-multiselect {
+             vertical-align: top;
+         }
+         .tr
+         {
+            border-bottom:1px solid black;
+            vertical-align: top;
+         }
+         .topLabel
+         {
+            font-size: 1.4em;
+            font-weight: bold;
+            padding-top: 50px;
+            padding-left: 50px;
+         }
+         .mainTable
+         {
+            padding-top: 10px;
+            padding-right: 50px;
+            padding-left: 50px;
+            
+            
+ 
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+      </style>
+   </body>
+</html>

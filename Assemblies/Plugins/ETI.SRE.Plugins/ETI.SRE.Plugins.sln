@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.ProductAssignmentValidation", "ETI.SRE.ProductAssignmentValidation\ETI.SRE.ProductAssignmentValidation.csproj", "{4D649C51-0313-428C-A40E-7A4D9214E67B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.AssociateBundlePricelist", "ETI.SRE.AssociateBundlePricelist\ETI.SRE.AssociateBundlePricelist.csproj", "{814DD343-D6FB-4C8E-ADA8-1AD5270CD2AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.BundleAssociationValidation", "ETI.SRE.BundleAssociationValidation\ETI.SRE.BundleAssociationValidation.csproj", "{52884B61-EDF8-4D9C-A178-F5A663883B7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.ValidateBundle", "ETI.SRE.ValidateBundle\ETI.SRE.ValidateBundle.csproj", "{C076D06B-A464-4BFF-AAF5-02FD2BB3851F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.SyncAccountBundleProductStatuses", "ETI.SRE.SyncAccountBundleProductStatuses\ETI.SRE.SyncAccountBundleProductStatuses.csproj", "{6D9DE872-B1F6-4B79-BA6E-07C2052D7AC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.DeleteRelatedAssociationsOnRuleDelete", "ETI.SRE.DeleteRelatedAssociationsOnRuleDelete\ETI.SRE.DeleteRelatedAssociationsOnRuleDelete.csproj", "{27FC176B-3CF6-457C-AE63-7838E90B3EBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.UpdateBundlePrice", "ETI.SRE.UpdateBundlePrice\ETI.SRE.UpdateBundlePrice.csproj", "{1D098829-4449-408E-A45B-7BA15D7E5624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.CreateRuleForEmptuBundleAssociation", "ETI.SRE.CreateRuleForEmptuBundleAssociation\ETI.SRE.CreateRuleForEmptuBundleAssociation.csproj", "{82F12020-9A8E-4AE8-B543-4CCFF53FD5A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.ProductsHistory", "ETI.SRE.ProductsHistory\ETI.SRE.ProductsHistory.csproj", "{7F18200E-6059-40B2-BE3C-9CED4F78FE44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETI.SRE.BillingConfigurationSingleton", "ETI.SRE.BillingConfigurationSingleton\ETI.SRE.BillingConfigurationSingleton.csproj", "{5E40BEFE-C451-4265-A9B5-986E72A86A99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D649C51-0313-428C-A40E-7A4D9214E67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D649C51-0313-428C-A40E-7A4D9214E67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D649C51-0313-428C-A40E-7A4D9214E67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D649C51-0313-428C-A40E-7A4D9214E67B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{814DD343-D6FB-4C8E-ADA8-1AD5270CD2AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{814DD343-D6FB-4C8E-ADA8-1AD5270CD2AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{814DD343-D6FB-4C8E-ADA8-1AD5270CD2AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{814DD343-D6FB-4C8E-ADA8-1AD5270CD2AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52884B61-EDF8-4D9C-A178-F5A663883B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52884B61-EDF8-4D9C-A178-F5A663883B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52884B61-EDF8-4D9C-A178-F5A663883B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52884B61-EDF8-4D9C-A178-F5A663883B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C076D06B-A464-4BFF-AAF5-02FD2BB3851F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C076D06B-A464-4BFF-AAF5-02FD2BB3851F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C076D06B-A464-4BFF-AAF5-02FD2BB3851F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C076D06B-A464-4BFF-AAF5-02FD2BB3851F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D9DE872-B1F6-4B79-BA6E-07C2052D7AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D9DE872-B1F6-4B79-BA6E-07C2052D7AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D9DE872-B1F6-4B79-BA6E-07C2052D7AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D9DE872-B1F6-4B79-BA6E-07C2052D7AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27FC176B-3CF6-457C-AE63-7838E90B3EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27FC176B-3CF6-457C-AE63-7838E90B3EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27FC176B-3CF6-457C-AE63-7838E90B3EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27FC176B-3CF6-457C-AE63-7838E90B3EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D098829-4449-408E-A45B-7BA15D7E5624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D098829-4449-408E-A45B-7BA15D7E5624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D098829-4449-408E-A45B-7BA15D7E5624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D098829-4449-408E-A45B-7BA15D7E5624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F12020-9A8E-4AE8-B543-4CCFF53FD5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F12020-9A8E-4AE8-B543-4CCFF53FD5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F12020-9A8E-4AE8-B543-4CCFF53FD5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F12020-9A8E-4AE8-B543-4CCFF53FD5A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F18200E-6059-40B2-BE3C-9CED4F78FE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F18200E-6059-40B2-BE3C-9CED4F78FE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F18200E-6059-40B2-BE3C-9CED4F78FE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F18200E-6059-40B2-BE3C-9CED4F78FE44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E40BEFE-C451-4265-A9B5-986E72A86A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E40BEFE-C451-4265-A9B5-986E72A86A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E40BEFE-C451-4265-A9B5-986E72A86A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E40BEFE-C451-4265-A9B5-986E72A86A99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2009DBF-2A83-4B90-B126-98D3CD44256D}
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+EndGlobal

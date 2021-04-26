@@ -1,0 +1,88 @@
+<html>
+   <head>
+      <title></title>
+      <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.406/styles/kendo.common-bootstrap.min.css">
+      <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.406/styles/kendo.bootstrap.min.css">
+         <link rel="stylesheet" href="eti_/udm/common/kendo/kendo-custom-theme-bootstrap.css">
+      <script src="eti_lodash.js"></script>
+      <script src="ClientGlobalContext.js.aspx" type="text/javascript"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="eti_kendo.all.min.js"></script>
+      <script src="eti_bundle_products.js"></script>
+      <meta>
+      <meta>
+      <meta>
+   </head>
+   <body style="overflow-wrap: break-word; font-family: Segoe UI,Tahoma,Arial;">
+      <div id="example" style = "display: none">
+         <div id="productAssignmentDialog"></div>
+         <div id="add-product" class="demo-section k-content">
+             <p class="title">Add product to bundle</p>    
+         </div>
+     </div>
+      <script type="text/x-kendo-template" id="template-left">
+         <div class="buttonsComtainer">
+            Products in Price List <a  class="k-pager-plus k-link k-button k-button-icon" title="Associate Product"><span style="float:right" class="k-icon k-i-plus"></span></a>
+         </div>
+     
+     </script>
+     <script type="text/x-kendo-template" id="template-right">
+      <div class="buttonsComtainer">
+         <a  class="k-pager-plus k-link k-button k-button-icon" title="Associate Product"><span style="float:right" class="k-icon k-i-plus"></span></a><a  class="k-pager-minus k-link k-button k-button-icon" title="Remove Product Category"><span style="float:right" class="k-icon k-i-minus"></span></a>
+      </div>
+  
+     </script>
+     <script type="text/x-kendo-template" id="template-detail">
+         <div class="buttonsComtainer">
+            Products in Category  <a  class="k-pager-minus k-link k-button k-button-icon" title="Rempve Product"><span style="float:right" class="k-icon k-i-minus"></span></a>
+         </div>
+     
+     </script>
+      <div id="mainDiv">
+         <div id="dialog"></div>
+         <table id="mainTable" width="100%" >
+            <tbody>
+                <tr>
+                    <td><div id="frame-right" class="frame-right"></div>   </td>
+                </tr>
+                </tbody>
+        </table>
+      </div>
+      <style>
+      
+         .k-dirty{
+    display: none;      
+  }
+         .k-button{
+         float: right;
+         }
+         .eti-command-reset {
+         color: green;
+         float: left;
+         }
+         .k-header .k-link{
+         text-align: center;
+         }
+         .black-cap {
+         background-position: 0 0;
+         }
+         .grey-cap {
+         background-position: 0 -225px;
+         }
+         .k-grid {
+         font-size: 14px;
+         }
+         .orange-cap {
+         background-position: 0 -450px;
+         }
+         .k-multiselect {
+             vertical-align: top;
+         }
+         .mainTable
+         {
+            vertical-align: top;
+         }
+        
+      </style>
+   </body>
+</html>
